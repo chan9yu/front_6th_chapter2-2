@@ -1,4 +1,5 @@
-import type { CartItem, Coupon } from "../../../../types";
+import type { Coupon } from "../../coupon";
+import type { CartItem } from "../types";
 
 export const getMaxApplicableDiscount = (item: CartItem, cart: CartItem[]) => {
   const { discounts } = item.product;
