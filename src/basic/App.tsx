@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from "react";
+import { FormEvent, useCallback, useEffect, useState } from "react";
 
 import { CartItem, Coupon, Product } from "../types";
 import {
@@ -390,7 +390,7 @@ const App = () => {
     [selectedCoupon, addNotification]
   );
 
-  const handleProductSubmit = (e: React.FormEvent) => {
+  const handleProductSubmit = (e: FormEvent) => {
     e.preventDefault();
     if (editingProduct && editingProduct !== "new") {
       updateProduct(editingProduct, productForm);
@@ -406,7 +406,7 @@ const App = () => {
     setShowProductForm(false);
   };
 
-  const handleCouponSubmit = (e: React.FormEvent) => {
+  const handleCouponSubmit = (e: FormEvent) => {
     e.preventDefault();
     addCoupon(couponForm);
     setCouponForm({
