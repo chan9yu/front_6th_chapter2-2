@@ -6,7 +6,6 @@ import {
   CartIcon,
   CloseIcon,
   ImagePlaceholderIcon,
-  MinusIcon,
   PlusIcon,
   TrashIcon
 } from "./shared/components";
@@ -1070,7 +1069,7 @@ const App = () => {
                                   onClick={() => updateQuantity(item.product.id, item.quantity - 1)}
                                   className="flex h-6 w-6 items-center justify-center rounded border border-gray-300 hover:bg-gray-100"
                                 >
-                                  <MinusIcon className="h-3 w-3" />
+                                  <span className="text-xs">−</span>
                                 </button>
                                 <span className="mx-3 w-8 text-center text-sm font-medium">
                                   {item.quantity}
@@ -1079,7 +1078,7 @@ const App = () => {
                                   onClick={() => updateQuantity(item.product.id, item.quantity + 1)}
                                   className="flex h-6 w-6 items-center justify-center rounded border border-gray-300 hover:bg-gray-100"
                                 >
-                                  <PlusIcon className="h-3 w-3" />
+                                  <span className="text-xs">+</span>
                                 </button>
                               </div>
                               <div className="text-right">
