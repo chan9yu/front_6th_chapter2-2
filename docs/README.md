@@ -59,7 +59,7 @@
 ### 파일 구조
 
 ```
-docs/pr/
+docs/
 ├── README.md                    # 이 파일
 ├── basic-requirements.md        # Basic 과제 요구사항
 └── advanced-requirements.md     # Advanced 과제 요구사항
